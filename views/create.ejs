@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Blog | Blognest</title>
+  <link rel="stylesheet" href="/css/ccstyle.css">
+</head>
+
+<body>
+  <%-include("partials/header.ejs")%>
+
+    <!-- Form Section -->
+    <div class="form-container">
+      <div class="form-box">
+        <h2>Create a New Blog</h2>
+        <form action="/submit" method="POST">
+          <div>
+            <label for="title">Title of Blog</label>
+            <input type="text" name="title" required />
+          </div>
+
+          <div>
+            <label for="date">Date of Blog</label>
+            <input type="date" name="date" required />
+          </div>
+
+          <div>
+            <label for="fname">First Name of Author</label>
+            <input type="text" name="fname" required />
+          </div>
+
+          <div>
+            <label for="lname">Last Name of Author</label>
+            <input type="text" name="lname" required />
+          </div>
+
+          <div class="full-width">
+            <label for="blog">Blog Content</label>
+            <textarea id="blog" name="blog" required></textarea>
+          </div>
+
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Created by Shaurya Mittal | © 2025 Blognest
+    </footer>
+  </div>
+
+  <!-- Vanta Waves Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 100.00,
+      minWidth: 100.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x112233,
+      shininess: 40.00,
+      waveHeight: 20.00,
+      waveSpeed: 0.4,
+      zoom: 0.85
+    });
+  </script>
+</body>
+
+</html>

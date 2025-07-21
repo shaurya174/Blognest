@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Editor | Blognest</title>
+  <link rel="stylesheet" href="/css/estyle.css">
+</head>
+
+<body>
+  <%-include("partials/header.ejs")%>
+
+    <!-- Editor Section -->
+    <div class="editor-container">
+      <div class="editor-box">
+        <h2>Post Editor</h2>
+        <form action="/edit/<%= post.id %>" method="POST">
+            <input type="text" name="title" value="<%= post.title %>" required>
+            <textarea name="blog"><%= post.post %></textarea>
+            <button type="submit">Save</button>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Created by Shaurya Mittal | © 2025 Blognest
+    </footer>
+  </div>
+
+  <!-- Vanta Waves Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 100.00,
+      minWidth: 100.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x112233,
+      shininess: 40.00,
+      waveHeight: 20.00,
+      waveSpeed: 0.4,
+      zoom: 0.85
+    });
+  </script>
+</body>
+
+</html>

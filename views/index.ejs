@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blognest</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/hstyle.css">
+</head>
+<body>
+    <%-include("partials/header.ejs")%>
+    <!-- Website Sections Start -->
+    <section id="blog-sections" class="website-sections container my-5">
+      <h2 class="section-title text-center mb-5">🌟 WEBSITE SECTIONS</h2>
+      <div class="row g-4">
+        <div class="col-md-6 fade-in">
+          <div class="content-box shadow-lg p-4">
+            <h4 class="section-heading">1. Power of Words</h4>
+            <p class="section-para">
+              Words are more than just letters strung together — they are emotions, stories, and revolutions waiting to happen...
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 fade-in">
+          <div class="content-box shadow-lg p-4">
+            <h4 class="section-heading">📝 2. Platform to Express</h4>
+            <p class="section-para">
+              We all have something within us — ideas, dreams, pain, passion — just waiting to be released...
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 fade-in">
+          <div class="content-box shadow-lg p-4">
+            <h4 class="section-heading">🕊️ 3. Unfiltered. Unedited. Unapologetic.</h4>
+            <p class="section-para">
+              In a world that constantly tells us to conform, this blog space is your rebellion...
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 fade-in">
+          <div class="content-box shadow-lg p-4">
+            <h4 class="section-heading">💬 4. Let Your Thoughts Breathe</h4>
+            <p class="section-para">
+              We think thousands of thoughts every day, but how many do we actually give space to?...
+            </p>
+          </div>
+        </div>
+        <div class="col-12 fade-in">
+          <div class="content-box shadow-lg p-4">
+            <h4 class="section-heading">🔥 5. Your Story. Your Voice. Your Space.</h4>
+            <p class="section-para">
+              Everyone has a story. Maybe you think yours isn’t big enough, dramatic enough, or unique enough...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="text-center mt-5" id="cta-buttons">
+        <a href="/allposts" class="btn btn-primary mx-2">All Posts</a>
+        <a href="/create" class="btn btn-success mx-2">Create Post</a>
+        <a href="/posts" class="btn btn-warning mx-2">Your Posts</a>
+        <a href="/contact" class="btn btn-dark mx-2">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <%-include("partials/footer.ejs")%>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Scroll View</title>
+  <link rel="stylesheet" href="/css/astyle.css">
+</head>
+
+<body>
+   <% if (success) { %>
+    <script>
+      alert("Post successfully created!");
+    </script>
+  <% } %>
+
+  <%-include("partials/header.ejs")%>
+
+    <!-- Blog Scroll and Display -->
+    <div class="main-section">
+      <div class="post-list" id="postList"></div>
+      <div class="post-display" id="postDisplay">
+        <p>Select a post to view</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Created by Shaurya Mittal | © 2025 Blognest
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 100.00,
+      minWidth: 100.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x112233,
+      shininess: 40.00,
+      waveHeight: 20.00,
+      waveSpeed: 0.4,
+      zoom: 0.85
+    });
+  </script>
+  <script id="post-data" type="application/json">
+  <%- JSON.stringify(myposts) %>
+  </script>
+  <script>
+    const posts = JSON.parse(document.getElementById("post-data").textContent);
+    const postList = document.getElementById("postList");
+    const postDisplay = document.getElementById("postDisplay");
+
+    posts.forEach((post, index) => {
+      const item = document.createElement("div");
+      item.className = "post-item";
+      item.innerHTML = `<strong>${post.title}</strong><br><small>${post.author} | ${post.date}</small>`;
+      item.onclick = () => displayPost(post);
+      postList.appendChild(item);
+    });
+
+    function getInitials(name) {
+      return name.split(" ").map(word => word[0]).join("").toUpperCase();
+    }
+
+    function displayPost(post) {
+      postDisplay.innerHTML = `
+        <div class="author-icon">${getInitials(post.author)}</div>
+        <h2>${post.title}</h2>
+        <p><strong>${post.author}</strong> | ${post.date}</p>
+        <p style="margin-top: 20px; line-height: 1.7;">${post.post}</p>
+      `;
+    }
+  </script>
+</body>
+
+</html>

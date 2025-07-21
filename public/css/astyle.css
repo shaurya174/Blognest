@@ -1,0 +1,115 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #vanta-bg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    .content-overlay {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #00ffff;
+    }
+
+    .main-section {
+      display: flex;
+      padding: 40px;
+      flex-grow: 1;
+    }
+
+    .post-list {
+      width: 30%;
+      max-height: 500px;
+      overflow-y: auto;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin-right: 20px;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .post-item {
+      margin-bottom: 15px;
+      cursor: pointer;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      transition: background 0.3s ease;
+    }
+
+    .post-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .post-display {
+      width: 70%;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .author-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #00ffff;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
