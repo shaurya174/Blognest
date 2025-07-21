@@ -90,5 +90,5 @@ Blognest/
 <hr/>
 
 <h2>🌐 Live Demo</h2>
-<p>Coming soon on <strong>Render</strong> or <strong>Streamlit Cloud</strong> (or you can host locally).</p>
+<p>Render -><a href="https://blognest-6dq2.onrender.com/" target="_blank">BLOGNEST</a></p>
 
