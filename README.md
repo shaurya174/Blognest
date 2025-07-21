@@ -79,7 +79,7 @@ Blognest/
 <p><strong>Shaurya Mittal</strong> – Developer, Learner, and aspiring Full Stack Engineer,ML Enthusiast and a software developer 🚀</p>
 <p>
   🔗 <a href="https://github.com/shaurya174" target="_blank">GitHub</a> |
-  💼 <a href="https://www.linkedin.com/in/your-link-here" target="_blank">LinkedIn</a>
+  💼 <a href="https://www.linkedin.com/in/shaurya-mittal-99b494295/" target="_blank">LinkedIn</a>
 </p>
 
 <hr/>
