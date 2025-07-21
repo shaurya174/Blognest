@@ -1,5 +1,5 @@
 <h1 align="center">📝 Blognest</h1>
-<p align="center">A clean, minimalist full-stack blogging platform built using Node.js, Express.js, and Vanilla JS.</p>
+<p align="center">A clean, minimalist full-stack blogging platform built using Node.js, Express.js,EJS,CSS and JS.</p>
 <p align="center">
   <img src="https://img.shields.io/badge/status-active-brightgreen" />
   <img src="https://img.shields.io/badge/version-1.0-blue" />
